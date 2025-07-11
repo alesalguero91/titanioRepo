@@ -18,4 +18,4 @@ ENV PYTHONUNBUFFERED=1
 ENV PORT=8000
 EXPOSE $PORT
 
-CMD ["gunicorn", "titanio2.wsgi:application", "--bind", "0.0.0.0:$PORT"]
+CMD ["gunicorn", "titanio2.wsgi:application", "--bind", "0.0.0.0:8000"]
