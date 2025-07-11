@@ -30,4 +30,4 @@ ENV PYTHONPATH=/app
 EXPOSE $PORT
 
 # Comando de inicio
-CMD ["gunicorn", "titanio2.wsgi:application", "--bind", "0.0.0.0:8000"]
+CMD ["gunicorn", "titanio2.wsgi:application", "--bind", "0.0.0.0:$PORT"]
