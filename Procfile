@@ -1,0 +1,1 @@
+web: gunicorn titanio2.wsgi
