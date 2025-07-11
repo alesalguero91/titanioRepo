@@ -3,15 +3,16 @@ FROM python:3.10-slim
 WORKDIR /app
 
 # Instala dependencias del sistema (Tesseract para OCR y Poppler para PDF)
-RUN apt-get update && apt-get install -y --no-install-recommends \
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends \
     tesseract-ocr \
     tesseract-ocr-spa \
     tesseract-ocr-eng \
     poppler-utils \
     ghostscript \
-    libmagic1 \  # Necesario para python-magic
-    && apt-get clean \
-    && rm -rf /var/lib/apt/lists/*
+    libmagic1 && \  # Necesario para python-magic
+    apt-get clean && \
+    rm -rf /var/lib/apt/lists/*
 
 # Instala dependencias de Python
 COPY requirements.txt .
