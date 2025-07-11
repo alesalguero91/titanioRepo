@@ -1,1 +1,1 @@
-web: gunicorn titanio2.wsgi
+web: gunicorn titanio2.wsgi:application
