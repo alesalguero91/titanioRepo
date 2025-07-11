@@ -30,6 +30,12 @@ ALLOWED_HOSTS = ['*']
 
 # Application definition
 
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.dummy'
+    }
+}
+
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
