@@ -28,7 +28,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['https://titaniorepo.onrender.com/']
 
 CORS_ALLOW_ALL_ORIGINS = True  # Solo para desarrollo, ajusta en producción
 
